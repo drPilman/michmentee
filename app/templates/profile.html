@@ -18,9 +18,9 @@
     <a class="logo" href="/index">
         <img src="/static/img/biglogsvg.svg" alt="">
     </a>
-    <a href="#page0" class="nav0">Мой профиль</a>
-    <a href="#page1" class="nav1">Мои курсы</a>
-    <a href="#page2" class="nav2">Подборки курсов</a>
+    <a href="#page0" id="nav0" class="nav0 nav_selected">Мой профиль</a>
+    <a href="#page1" id="nav1" class="nav1">Мои курсы</a>
+    <a href="#page2" id="nav2" class="nav2">Подборки курсов</a>
 
     <span id="page0"></span>
     <span id="page1"></span>
@@ -65,7 +65,32 @@
     <p class="authors1">ООО «Мичил», 2022</p>
     <p class="authors2">support@michmentee.com</p>
 
-
+    <script>
+        var n = [document.getElementById("nav0"),
+        document.getElementById("nav1"),
+        document.getElementById("nav2")];
+        var cur = 0;
+        function update(e) {
+            var c = document.documentElement.scrollTop || document.body.scrollTop;
+            var cc = 0;
+            if (c < 912) {
+                cc = 0;
+            } else {
+                if (c >= 1798) {
+                    cc = 2;
+                } else {
+                    cc = 1;
+                }
+            }
+            if (cc != cur) {
+                n[cur].classList.remove('nav_selected');
+                n[cc].classList.add('nav_selected');
+                cur = cc;
+            }
+        }
+        update();
+        window.addEventListener('scroll', update);
+    </script>
 </body>
 
 </html>
