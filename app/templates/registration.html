@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/registration.css">
+    <title>Document</title>
+</head>
+<header>
+    <a href="/index">
+        <img src="/static/img/biglogsvg.svg" class="main-logo" alt="">
+    </a>
+</header>
+
+<body>
+    <svg id="back-human-1" width="357" height="551" viewBox="0 0 357 551" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.6"
+            d="M250.546 298.787L220.261 550.297L318.472 514.918L355.367 272.71L535.04 411.035L611.118 368.273L408.674 222.697L303.132 79.5728L400.811 -5.88528L376.843 -48.5268L230.77 51.0386L252.858 -54.5152L138.493 -69.1418L96.1192 33.5845L187.69 75.2532L4.86238 155.855L0.360085 231.755L217.251 127.845L250.546 298.787Z"
+            fill="#C1C3FF" fill-opacity="0.84" />
+    </svg>
+    <svg id="back-human-2" width="342" height="422" viewBox="0 0 342 422" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.6"
+            d="M158.444 300.952L263.746 467.845L196.904 477.015L107.532 321.955L35.1356 499.208L-58.1062 512L29.8148 318.599L61.8695 172.657L-70.856 277.239L-130.537 234.326L80.0685 121.773L-4.52935 68.2591L86.9003 0.545185L187.571 41.9048L132.868 114.529L341.723 42.1281L326.809 87.9222L139.384 162.023L158.444 300.952Z"
+            fill="#CFD1FF" />
+    </svg>
+    <div class="zagol">Регистрация</div>
+    <form method="POST" action="/signup">
+        <input class="form-control mb-3 surname" type="text" name="surname" placeholder="Фамилия"></div>
+        <input class="form-control mb-3 name" type="text" name="name" placeholder="Имя"></div>
+        <input class="form-control mb-3 patro" type="text" name="patronymic" placeholder="Отчество"></div>
+        <input class="form-control mb-3 birthday" type="date" name="birthday" placeholder="ДД.ММ.ГГГГ"></div>
+        <input class="form-control mb-3 vuz" type="text" name="study" placeholder="ВУЗ"></div>
+        <input class="form-control mb-3 fakul" type="text" name="faculty" placeholder="Факультет"></div>
+        <input class="form-control mb-3 email" type="email" name="email" placeholder="Email"></div>
+        <input class="form-control mb-3 telefon" type="tel" name="number" placeholder="Телефон"></div>
+        <input class="form-control mb-3 password" type="password" name="password" placeholder="Придумайте пароль"></div>
+        <input class="form-control mb-3 password2" type="password" name="password2" placeholder="Повторите пароль">
+        </div>
+        <input class="btn btnreg" id="reg-btn" type="submit" value="Зарегистрироваться">
+    </form>
+    <div class="login">
+        <p>Уже есть аккаунт? <a href="/login">Войти</a></p>
+    </div>
+</body>
+
+</html>

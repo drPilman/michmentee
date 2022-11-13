@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mich mentee</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-logo-box">
+                <img src="/static/img/biglogsvg.svg" alt="" class="header-logo">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li>
+                        <a href="#page0" class="header-text1">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#page1" class="header-text2">Наставники</a>
+                    </li>
+                    <li>
+                        <a href="#page2" class="header-text3">Наши курсы</a>
+                    </li>
+                    <li>
+                        <a href="#page3" class="header-text4">Проекты</a>
+                    </li>
+                </ul>
+                {% if current_user.is_authenticated %}
+                <a href="/logout" class="btn header-button-box">Выйти</a>
+                {% else %}
+                <a href="/login" class="btn header-button-box">Войти</a>
+                {% endif %}
+
+            </nav>
+            <div class="blackline"></div>
+        </div>
+    </header>
+    <span id="page0"></span>
+    <span id="page1"></span>
+    <span id="page2"></span>
+    <span id="page3"></span>
+    <div class="tem-kto">Тем, кто хочет
+        развиваться
+    </div>
+    <div class="tem-kto-under">Наставничество, нетворкинг, проекты и многое другое</div>
+    <div>
+        <a class="btn button-registr" href="/signup">
+            <p class="button-mytext">Зарегистрироваться</p>
+        </a>
+    </div>
+    <!-- <div class="human1">
+        <img src="/static/img/human1svg.svg" alt="">
+      </div> -->
+    <div class="pyatno">
+        <img src="/static/img/pyatno.png" alt="">
+    </div>
+    <div class="main-log">
+        <img src="/static/img/mich mentee.svg" alt="">
+    </div>
+    <div class="text-na-pyatne">
+        – это платформа, где наставники делятся опытом и знаниями в профильной области, которые студенты потом применяют
+        в решении проектов у компаний-партнеров.
+    </div>
+    <div class="nashi-preim">
+        Наши преимущества
+    </div>
+    <div class="first_preim-around">
+        <p class="first-preim-big">300+ успешных студентов</p>
+        <p class="first-preim-small">Здесь ты найдешь себе новые знакомства!</p>
+    </div>
+    <div class="second-priem-around">
+        <p class="second-priem-big">5 лет опыта</p>
+        <p class="second-priem-small">Успешно работаем 5 лет. Нам доверяют.</p>
+    </div>
+    <div class="last-priem-around">
+        <p class="last-priem-big">7 видов мастер-классов</p>
+        <p class="last-priem-small">Каждый найдет себе подходящий мастер-класс. Также вы можете предложить нам свою
+            идею!</p>
+    </div>
+
+    <p class="teacher-h">
+        Состав Наставников
+    </p>
+    <form>
+        <input type="radio" id="radio_l" name="a" value="" checked style="display:none;" />
+        <label class="arrow" id="arrow_l" for="radio_l">
+            <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 12L19.5 22" stroke="#191919" stroke-width="3" stroke-linecap="round" />
+                <path d="M2 12L19.5 2" stroke="#191919" stroke-width="3" stroke-linecap="round" />
+            </svg>
+        </label>
+
+        <input type="radio" id="radio_r" name="a" value="" style="display:none;" />
+        <label class="arrow" id="arrow_r" for="radio_r">
+            <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.5 12L2 22" stroke="#191919" stroke-width="3" stroke-linecap="round" />
+                <path d="M19.5 12L2 2" stroke="#191919" stroke-width="3" stroke-linecap="round" />
+            </svg>
+        </label>
+        <div id="img-teachers">
+            <img id="img-teacher-1" src="/static/img/наставники группа 1.png">
+            <img id="img-teacher-2" src="/static/img/наставники группа 2.png">
+        </div>
+    </form>
+
+
+    <div class="anons">Анонсы проектов</div>
+    <div class="longblackline"></div>
+    <div class="first-anons-date">5 декабря 2022</div>
+    <div class="first-anons-name">Разработка баз данных в Ozon</div>
+    <div class="first-anons-text">Команда занимается инфраструктурными разработками систем, с которыми работают наши
+        сотрудники на местах.</div>
+    <div class="first-anons-photo">
+        <img src="/static/img/firstanonspng.png" alt="">
+    </div>
+    <div class="longblackline" top: 2896></div>
+    <div class="second-anons-date">18 ноября 2022</div>
+    <div class="second-anons-name">DevOps в Яндексе</div>
+    <div class="second-anons-text">Начинающие специалисты будут разбираться в архитектуре и построении высоконагруженных
+        и отказоустойчивых сервисов.</div>
+    <div class="second-anons-photo">
+        <img src="/static/img/secondanonsphoto.png" alt="">
+    </div>
+    <div class="longblackline"></div>
+    <div class="last-anons-date">11 ноября 2022</div>
+    <div class="last-anons-name">Хакатон “Будущее Якутии”</div>
+    <div class="last-anons-text">Участники в режиме реального времени будут придумывать решение проблем, которое
+        реализует правительство РС(Я).</div>
+    <div class="last-anons-photo">
+        <img src="/static/img/lastanons.png" alt="">
+    </div>
+</body>
+
+</html>

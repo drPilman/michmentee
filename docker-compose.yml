@@ -1,0 +1,35 @@
+version: '3'
+services:
+  database:
+    build: postgres
+    image: postgresql
+    env_file:
+      - .env
+      - secret.env
+    volumes:
+      - database-data:/var/lib/postgresql/data/
+    restart: unless-stopped
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"
+        ]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+  app:
+    build: app
+    image: flask
+    ports:
+      - ${FLASK_RUN_PORT}:${FLASK_RUN_PORT}
+    env_file:
+      - .env
+      - secret.env
+    depends_on:
+      database:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  database-data:

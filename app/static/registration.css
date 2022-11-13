@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;500;700&family=Rubik:ital,wght@0,500;0,800;1,800&display=swap');
+
+body {
+    font-family: 'Inter';
+    background-color: #F5F5F5;
+}
+
+header {
+    justify-content: center;
+}
+
+.main-logo {
+    position: absolute;
+    width: 160px;
+    height: 64px;
+    left: 640px;
+    top: 84px;
+    font-family: 'Tablon';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 89%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #6E73FF;
+}
+
+.zagol {
+    position: absolute;
+    width: 261px;
+    height: 48px;
+    left: 200px;
+    top: 219px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #212121;
+}
+
+.surname {
+
+    padding: 15px 25px 15px 25px;
+    gap: 10px;
+
+    position: absolute;
+    width: 505px;
+    height: 62px;
+    left: 200px;
+    top: 307px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.name {
+    padding: 15px 25px 15px 25px;
+    position: absolute;
+    width: 505px;
+    height: 62px;
+    left: 735px;
+    top: 307px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.patro {
+    padding: 15px 25px 15px 25px;
+    position: absolute;
+    width: 505px;
+    height: 62px;
+    left: 200px;
+    top: 379px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.birthday {
+
+    padding: 15px 25px;
+    position: absolute;
+    width: 178px;
+    height: 62px;
+    left: 735px;
+    top: 379px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.vuz {
+
+    padding: 15px 25px 15px 25px;
+    position: absolute;
+    width: 505px;
+    height: 62px;
+    left: 200px;
+    top: 451px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.fakul {
+    padding: 15px 25px 15px 25px;
+    gap: 10px;
+
+    position: absolute;
+    width: 505px;
+    height: 62px;
+    left: 735px;
+    top: 451px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.email {
+
+    padding: 15px 25px 15px 25px;
+    gap: 10px;
+
+    position: absolute;
+    width: 505px;
+    height: 62px;
+    left: 200px;
+    top: 523px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.telefon {
+
+    padding: 15px 25px 15px 25px;
+    gap: 10px;
+
+    position: absolute;
+    width: 505px;
+    height: 62px;
+    left: 735px;
+    top: 523px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.password {
+
+    padding: 15px 25px 15px 25px;
+    gap: 10px;
+
+    position: absolute;
+    width: 505px;
+    height: 62px;
+    left: 200px;
+    top: 595px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.password2 {
+
+    padding: 15px 25px 15px 25px;
+    gap: 10px;
+
+    position: absolute;
+    width: 505px;
+    height: 62px;
+    left: 200px;
+    top: 667px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+#back-human-1 {
+    position: absolute;
+    width: 465.53px;
+    height: 612.89px;
+    right: 0px;
+    top: 0px;
+
+    opacity: 0.6;
+}
+
+#back-human-2 {
+    position: absolute;
+    width: 494px;
+    height: 487px;
+    left: 0px;
+    bottom: 0px;
+
+    opacity: 0.6;
+}
+
+.login {
+    padding: 15px 15px 15px 15px;
+    position: absolute;
+    width: 505px;
+    height: 62px;
+    left: 735px;
+    top: 595px;
+}
+
+.login p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+
+    /* bw/500 */
+
+    color: #555555;
+}
+
+.login a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+
+    color: #6E73FF;
+}
+
+.btnreg {
+
+    padding: 15px 25px 15px 25px;
+    gap: 10px;
+
+    position: absolute;
+    width: 505px;
+    height: 62px;
+    left: 735px;
+    top: 667px;
+
+    /* кнопка 1 */
+
+    background: #8A8EFF;
+    --bs-btn-active-bg: #6E73FF;
+    --bs-btn-active-border-color: #6E73FF;
+    --bs-btn-hover-bg: #6E73FF;
+    --bs-btn-hover-border-color: #6E73FF;
+    border-color: #8A8EFF;
+    border-radius: 5px;
+
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    letter-spacing: 0.015em;
+
+    color: #FFFFFF;
+}

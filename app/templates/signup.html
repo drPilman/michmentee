@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sign Up</title>
+</head>
+
+<body>
+	<!-- {% with messages = get_flashed_messages() %}
+	{% if messages %}
+	{% for message in messages %}
+	{{ message }}
+	{% endfor %}
+	{% endif %}
+	{% endwith %} -->
+	<form method="POST" action="/signup">
+		<p>
+			<label for="full_name">Your name:</label>
+			<input type="text" name="full_name">
+		</p>
+		<p>
+			<label for="username">Login:</label>
+			<input type="text" name="username">
+		</p>
+		<p>
+			<label for="password">Password:</label>
+			<input type="password" name="password">
+		</p>
+		<p>
+			<input type="submit" value="Sign In">
+		</p>
+	</form>
+
+</body>
+
+</html>

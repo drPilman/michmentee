@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mich mentee</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/login.css">
+</head>
+
+<body>
+    <svg id="back-human-1" width="357" height="551" viewBox="0 0 357 551" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.6"
+            d="M250.546 298.787L220.261 550.297L318.472 514.918L355.367 272.71L535.04 411.035L611.118 368.273L408.674 222.697L303.132 79.5728L400.811 -5.88528L376.843 -48.5268L230.77 51.0386L252.858 -54.5152L138.493 -69.1418L96.1192 33.5845L187.69 75.2532L4.86238 155.855L0.360085 231.755L217.251 127.845L250.546 298.787Z"
+            fill="#C1C3FF" fill-opacity="0.84" />
+    </svg>
+    <svg id="back-human-2" width="342" height="422" viewBox="0 0 342 422" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.6"
+            d="M158.444 300.952L263.746 467.845L196.904 477.015L107.532 321.955L35.1356 499.208L-58.1062 512L29.8148 318.599L61.8695 172.657L-70.856 277.239L-130.537 234.326L80.0685 121.773L-4.52935 68.2591L86.9003 0.545185L187.571 41.9048L132.868 114.529L341.723 42.1281L326.809 87.9222L139.384 162.023L158.444 300.952Z"
+            fill="#CFD1FF" />
+    </svg>
+
+    <div class="centred">
+        <a class="main-logo" href="/">
+            <svg width="156" height="58" viewBox="0 0 156 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0.232 0.483998H6.352L14.56 10.024L22.804 0.447999H28.924V25H22.804V11.284L14.524 20.896L6.352 11.392V25H0.232V0.483998ZM40.6923 25H34.4643V0.483998H40.6203L40.6923 25ZM46.2318 0.447999H70.8198V10.672H64.6278V6.604H52.3878V18.844H70.8198V25H46.2318V0.447999ZM76.3509 0.411999H82.5069V8.584H94.7469V0.447999H100.975V25H94.7469V14.74H82.5069V24.964H76.3509V0.411999ZM0.232 32.484H6.352L14.56 42.024L22.804 32.448H28.924V57H22.804V43.284L14.524 52.896L6.352 43.392V57H0.232V32.484ZM34.4643 32.484H52.9323V38.604H40.6203V40.656H50.8803V46.776H40.6203V50.88H52.9323V57.036H34.5003V57H34.4643V32.484ZM57.7631 32.484L63.8831 32.448H63.9191V32.484L76.1591 46.272V32.448H82.2791L82.3871 57H76.1591L63.9191 43.212V57H57.7631V32.484ZM109.337 32.448V38.568H101.237V57H95.0093V38.568H86.8373V32.448H109.337ZM113.818 32.484H132.286V38.604H119.974V40.656H130.234V46.776H119.974V50.88H132.286V57.036H113.854V57H113.818V32.484ZM137.116 32.484H155.584V38.604H143.272V40.656H153.532V46.776H143.272V50.88H155.584V57.036H137.152V57H137.116V32.484Z"
+                    fill="#6E73FF" />
+            </svg>
+        </a>
+        <p class="main-header">Войти</p>
+
+        <form method="POST" action="/login">
+            <p><input id="username" type="text" name="email" placeholder="Email"></p>
+
+            <p><input id="password" type="password" name="password" placeholder="Пароль"></p>
+
+            <p><input id="login-btn" class="btn login-btn" type="submit" value="Войти"></p>
+
+        </form>
+        <p class="info">Нет аккаунта? <a href="/signup" class="signup">Зарегистрироваться</a> </p>
+
+    </div>
+
+
+</body>
