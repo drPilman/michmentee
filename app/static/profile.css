@@ -65,30 +65,10 @@ body {
     color: #555555;
 }
 
-.job-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 470px 10px 35px;
-
-    position: absolute;
-    width: 756px;
-    height: 76px;
-    left: 497px;
-    top: calc(50% - 76px/2 - 898.5px);
-
-    background: #FFFFFF;
-    border-radius: 5px;
-}
-
 .vuz {
 
-    position: absolute;
-    width: 257px;
-    height: 48px;
-    left: 767px;
-    top: 470px;
-    width: 121px;
+    width: 52px;
+    height: 32px;
 
     /* Основной текст */
 
@@ -101,7 +81,12 @@ body {
 
     letter-spacing: 0.02em;
 
+    /* bw/800 */
+
     color: #212121;
+
+
+    /* Inside auto layout */
 
     flex: none;
     order: 0;
@@ -109,11 +94,7 @@ body {
 }
 
 .napravlenie {
-    position: absolute;
-    width: 257px;
-    height: 48px;
-    left: 767px;
-    top: 520px;
+    width: 376px;
     height: 24px;
 
     /* Подписи */
@@ -144,7 +125,6 @@ body {
     height: 52px;
     left: 497px;
     top: 594px;
-    border-radius: 10px;
     background: #FFFFFF;
 }
 
@@ -152,7 +132,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 10px 496px 10px 35px;
+    padding: 10px 25px 10px 25px;
     gap: 10px;
 
     position: absolute;
@@ -236,6 +216,22 @@ flex-grow: 0; */
     text-transform: uppercase;
 
     color: #6E73FF;
+}
+
+.stydies {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px 10px 15px;
+
+    position: absolute;
+    width: 881px;
+    height: 76px;
+    left: 497px;
+    top: 498px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
 }
 
 .nav0 {
@@ -451,4 +447,12 @@ flex-grow: 0; */
     /* bw/500 */
 
     color: #555555;
+}
+
+.authors0 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 523px;
+    top: 2783px;
 }

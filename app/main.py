@@ -8,6 +8,7 @@ main = Blueprint('main', __name__)
 
 @main.route('/')
 def index():
+    asd = [{'name':'asd','days':1},..]
     return render_template('index.html')
 
 

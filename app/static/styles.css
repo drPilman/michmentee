@@ -166,6 +166,14 @@ order: 0;
 flex-grow: 0; */
 }
 
+.graph {
+    position: absolute;
+    width: 670px;
+    height: 547px;
+    left: 648px;
+    top: 137px;
+}
+
 #page0 {
     position: absolute;
     left: 120px;
@@ -780,4 +788,34 @@ input[type="radio"]:checked+label path {
     top: 3226px;
     background: url(.png), url(image.png);
     border-radius: 10px;
+}
+
+.partner {
+    position: absolute;
+    width: 207px;
+    height: 48px;
+    left: 120px;
+    top: 3654px;
+
+    /* Подзаголовок 1 */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #000000;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.partner-box {
+    position: absolute;
+    width: 1199px;
+    height: 85px;
+    left: 120px;
+    top: 3732px;
 }

@@ -19,6 +19,15 @@ services:
       timeout: 3s
       retries: 5
       start_period: 10s
+  pgadmin4:
+    image: dpage/pgadmin4
+    env_file:
+      - secret.env
+    environment:
+      PGADMIN_DEFAULT_EMAIL: drpilman@g.com
+    ports:
+      - 3000:80
+
   app:
     build: app
     image: flask

@@ -154,22 +154,14 @@ form input::placeholder {
 
 #back-human-1 {
     position: absolute;
-    width: 465.53px;
-    height: 612.89px;
-    right: 0px;
-    top: 0px;
-
-    opacity: 0.6;
+    left: 0px;
+    top: 109.1px;
 }
 
 #back-human-2 {
     position: absolute;
-    width: 494px;
-    height: 487px;
-    left: 0px;
-    bottom: 0px;
-
-    opacity: 0.6;
+    right: 0;
+    bottom: 0;
 }
 
 .info {
